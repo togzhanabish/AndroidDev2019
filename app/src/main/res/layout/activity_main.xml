@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/numberInput"
+        style="@style/NumberTextStyle"
+        android:layout_width="379dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:gravity="bottom"
+        android:inputType="number"
+        android:paddingRight="20dp"
+        android:textAlignment="textEnd"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberInput"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp">
+
+
+            <Button
+                android:id="@+id/buttonNumber1"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+
+                android:layout_weight="0"
+                android:background="@drawable/bg_numbers"
+                android:text="1"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonNumber2"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_numbers"
+                android:text="2"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonNumber3"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_numbers"
+                android:text="3"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonPlus"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_operations"
+                android:text="+"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonPercent"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_operations"
+                android:text="%"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp">
+
+            <Button
+                android:id="@+id/buttonNumber4"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_numbers"
+                android:text="4"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonNumber5"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_numbers"
+                android:text="5"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonNumber6"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_numbers"
+                android:text="6"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonMinus"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_operations"
+                android:text="-"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonSquare"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_operations"
+                android:text="x²"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp">
+
+            <Button
+                android:id="@+id/buttonNumber7"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_numbers"
+                android:text="7"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonNumber8"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_numbers"
+                android:text="8"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonNumber9"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_numbers"
+                android:text="9"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonMultiply"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_operations"
+                android:text="*"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonSqrt"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_operations"
+                android:text="√"
+                android:textSize="24sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp">
+
+            <Button
+                android:id="@+id/buttonDelete"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_symbols"
+                android:text="C"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonNumber0"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_numbers"
+                android:text="0"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonDot"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_numbers"
+                android:text="."
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonDivide"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_operations"
+                android:text="÷"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonEqual"
+                style="@style/NumberTextStyle"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/bg_operations"
+                android:text="="
+                android:textSize="24sp" />
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>
